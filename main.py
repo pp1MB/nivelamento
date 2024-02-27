@@ -1,3 +1,5 @@
+import random
+
 while True:
     print("Escolha uma opção:")
     print("1. Pedra")
@@ -6,18 +8,14 @@ while True:
 
     jogador_escolha = int(input("Digite o número: "))
 
-    if jogador_escolha < 1 or jogador_escolha > 3:
+    if jogador_escolha not in range(1,4):
         print("Escolha inválida. Tente novamente.")
         continue
 
     opcoes = ["Pedra", "Papel", "Tesoura"]
     jogador_escolha -= 1  # Ajusta para índice da lista
 
-    computador_escolha = 1
-
-  # --------------------------------------------------
-  # FAÇA COM QUE A ESCOLHA DO COMPUTADOR SEJA ALEATÓRIA
-  # --------------------------------------------------
+    computador_escolha = random.randint(0, 2)
 
     print("Você escolheu:", opcoes[jogador_escolha])
     print("O computador escolheu:", opcoes[computador_escolha])
