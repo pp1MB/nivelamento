@@ -1,0 +1,6 @@
+numero = int(input("Escreva um número inteiro qualquer: "))
+print(f"O antecessor desse número é {numero-1}")
+print(f"O sucessor desse número é {numero+1}")
+print(f"O dobro desse número é {numero*2}")
+print(f"O triplo desse número é {numero*3}")
+print(f"O quadrado desse número é {numero**2}")
